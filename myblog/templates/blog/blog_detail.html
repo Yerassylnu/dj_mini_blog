@@ -15,8 +15,8 @@
 		<div id="navigation">
 			<ul>
 			    <li><a href="/" class="active">Главная</a></li>
-			    <li><a href="/admin">Админ панель</a></li>
-
+				<li><a href="https://t.me/progdevice" class="active">Телеграм🌌</a></li>
+			    <li><a href="/admin">Войти</a></li>
 			</ul>
 		</div>
 
@@ -24,7 +24,7 @@
 			<div id="content" class="left">
 
 				<div class="projects">
-					<h4>{{ post.title }}</h4>
+					<h2 class="post__name">{{ post.title }}</h2>
                     <p align="center">
                         <a href="#"><img src="{{ post.img.url }}" alt="Картинка не загрузилась" width="50%"/></a>
                     </p>
@@ -32,6 +32,7 @@
 						<div class="text left">
 							<p>{{ post.description }}</p>
 							<p>{{ post.author }}</p>
+							<h4>{{post.date}}</h4>
 						</div>
 						<div class="cl">&nbsp;</div>
 					</div>
